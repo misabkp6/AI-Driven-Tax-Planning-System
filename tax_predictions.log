@@ -1,0 +1,50 @@
+2025-04-02 22:02:36,171 - INFO - Model and scaler loaded successfully
+2025-04-02 22:03:08,856 - INFO - Model and scaler loaded successfully
+2025-04-02 22:23:40,461 - INFO - Model and scaler loaded successfully
+2025-04-02 22:23:40,522 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 22:23:40,522 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 22:23:40,545 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 22:23:42,866 - INFO - Model and scaler loaded successfully
+2025-04-02 22:23:42,893 - WARNING -  * Debugger is active!
+2025-04-02 22:23:42,898 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 22:26:08,202 - INFO - Model and scaler loaded successfully
+2025-04-02 22:26:08,239 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 22:26:08,239 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 22:26:08,261 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 22:26:11,635 - INFO - Model and scaler loaded successfully
+2025-04-02 22:26:11,656 - WARNING -  * Debugger is active!
+2025-04-02 22:26:11,661 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 22:28:44,117 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\pluggy\\_hooks.py', reloading
+2025-04-02 22:28:44,300 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\scope.py', reloading
+2025-04-02 22:28:44,489 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\python.py', reloading
+2025-04-02 22:28:44,952 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 22:28:47,988 - INFO - Model and scaler loaded successfully
+2025-04-02 22:28:48,014 - WARNING -  * Debugger is active!
+2025-04-02 22:28:48,019 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 22:30:22,815 - INFO - Model and scaler loaded successfully
+2025-04-02 22:30:22,853 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 22:30:22,853 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 22:30:22,875 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 22:30:26,750 - INFO - Model and scaler loaded successfully
+2025-04-02 22:30:26,771 - WARNING -  * Debugger is active!
+2025-04-02 22:30:26,775 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:05:29,793 - INFO - Model and scaler loaded successfully
+2025-04-02 23:05:29,834 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 23:05:29,835 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 23:05:29,858 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:05:33,943 - INFO - Model and scaler loaded successfully
+2025-04-02 23:05:33,965 - WARNING -  * Debugger is active!
+2025-04-02 23:05:33,970 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:12:32,371 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\flask\\helpers.py', reloading
+2025-04-02 23:12:33,308 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:12:37,038 - INFO - Model and scaler loaded successfully
+2025-04-02 23:12:37,071 - WARNING -  * Debugger is active!
+2025-04-02 23:12:37,076 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:14:26,748 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-02 23:14:26,749 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-02 23:14:26,754 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-02 23:14:27,390 - INFO -  * Restarting with watchdog (windowsapi)

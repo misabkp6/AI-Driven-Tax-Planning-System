@@ -1,0 +1,70 @@
+{
+    "feature_names": [
+        "AnnualIncome",
+        "Investments",
+        "Deductions",
+        "Age",
+        "MaritalStatus",
+        "NumDependents",
+        "EmploymentType",
+        "BusinessExpenses",
+        "HRA",
+        "OtherIncome",
+        "income_investment_ratio",
+        "investment_rate",
+        "expense_complexity",
+        "deduction_rate",
+        "income_diversity",
+        "hra_utilization",
+        "business_efficiency",
+        "age_normalized",
+        "dependent_impact",
+        "financial_health_score",
+        "tax_efficiency_ratio"
+    ],
+    "target_names": [
+        "FinalTax",
+        "UpdatedFinalTax"
+    ],
+    "model_version": "3.1.0",
+    "trained_at": "2025-04-04 22:02:02",
+    "algorithm": "XGBoost with MultiOutputRegressor",
+    "hyperparameters": {
+        "subsample": 0.9,
+        "n_estimators": 100,
+        "min_child_weight": 2,
+        "max_depth": 5,
+        "learning_rate": 0.1,
+        "colsample_bytree": 0.9
+    },
+    "metrics": {
+        "FinalTax": {
+            "train": {
+                "r2": 0.9999431371688843,
+                "rmse": 3006.049400791677,
+                "mae": 2121.12939453125,
+                "cv_score": 0.999938690662384,
+                "cv_std": 6.81268313514211e-07
+            },
+            "test": {
+                "r2": 0.9999411106109619,
+                "rmse": 3055.0873964585694,
+                "mae": 2153.493896484375
+            }
+        },
+        "UpdatedFinalTax": {
+            "train": {
+                "r2": 0.999850869178772,
+                "rmse": 4891.86876357083,
+                "mae": 3640.23193359375,
+                "cv_score": 0.9998488783836365,
+                "cv_std": 4.777541879394554e-06
+            },
+            "test": {
+                "r2": 0.9998424053192139,
+                "rmse": 5024.188889761212,
+                "mae": 3732.363525390625
+            }
+        }
+    }
+}

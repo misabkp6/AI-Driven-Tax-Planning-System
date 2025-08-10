@@ -1,0 +1,17 @@
+2025-06-17 12:49:13,394 - INFO - Predicting strategy for input: {'AnnualIncome': 820000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 120000, 'Age': 35, 'EmploymentType': 'Private', 'MaritalStatus': 'Single', 'TaxLiability': 13000.0, 'TaxSavings': 242840.0}
+2025-06-17 12:49:31,267 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-06-17 12:49:31,271 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-06-17 12:49:31,272 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-06-17 12:49:31,274 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-06-17 12:49:31,316 - INFO - Making prediction with features: [{'AnnualIncome': 820000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 120000, 'Age': 35, 'EmploymentType': 'Private', 'MaritalStatus': 'Single'}]
+2025-06-17 12:49:31,320 - INFO - Encoding EmploymentType = Private using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-06-17 12:49:31,329 - INFO - Encoding MaritalStatus = Single using available classes: ['Married', 'Single']
+2025-06-17 12:49:31,337 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-06-17 12:49:31,542 - INFO - Raw model prediction: 80C_Investment
+2025-06-17 12:49:31,544 - INFO - Class probabilities: [0.7734369  0.11718806 0.010158   0.01306159 0.08615544]
+2025-06-17 12:49:31,545 - INFO - Model confidence: 0.7734
+2025-06-17 12:49:31,546 - INFO - Recommendations customized based on: Age=35, Income=820000, 80C=150000
+2025-06-17 12:49:31,547 - INFO - Prediction successful: Strategy=Comprehensive 80C Investment Strategy
+2025-06-17 12:49:51,088 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-06-17 12:49:51,089 - INFO - Gemini API initialized successfully

@@ -1,0 +1,9 @@
+2025-05-16 22:02:30,874 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-05-16 22:02:30,875 - INFO - Gemini API initialized successfully
+2025-05-16 22:02:50,445 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-05-16 22:02:50,453 - INFO - Gemini API initialized successfully
+2025-05-16 22:03:03,892 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-05-16 22:03:03,893 - INFO - Gemini API initialized successfully

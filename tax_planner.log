@@ -1,0 +1,44 @@
+2025-04-02 23:14:35,531 - INFO - Model and scaler loaded successfully
+2025-04-02 23:14:35,581 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.58.31.209:5000
+2025-04-02 23:14:35,582 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 23:14:35,601 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:14:37,998 - INFO - Model and scaler loaded successfully
+2025-04-02 23:14:38,023 - WARNING -  * Debugger is active!
+2025-04-02 23:14:38,033 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:14:53,008 - INFO - 127.0.0.1 - - [02/Apr/2025 23:14:53] "GET / HTTP/1.1" 200 -
+2025-04-02 23:14:53,145 - INFO - 127.0.0.1 - - [02/Apr/2025 23:14:53] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-02 23:14:53,436 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\flask\\app.py', reloading
+2025-04-02 23:14:53,439 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\flask\\templating.py', reloading
+2025-04-02 23:14:53,441 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\jinja2\\environment.py', reloading
+2025-04-02 23:14:53,462 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\jinja2\\loaders.py', reloading
+2025-04-02 23:14:53,480 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\flask\\ctx.py', reloading
+2025-04-02 23:14:53,511 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\werkzeug\\routing\\map.py', reloading
+2025-04-02 23:14:53,533 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\werkzeug\\routing\\matcher.py', reloading
+2025-04-02 23:14:53,557 - INFO - 127.0.0.1 - - [02/Apr/2025 23:14:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-04-02 23:14:54,211 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:14:56,679 - INFO - Model and scaler loaded successfully
+2025-04-02 23:14:56,730 - WARNING -  * Debugger is active!
+2025-04-02 23:14:56,736 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:15:55,147 - ERROR - Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-04-02 23:15:55,153 - INFO - 127.0.0.1 - - [02/Apr/2025 23:15:55] "POST / HTTP/1.1" 200 -
+2025-04-02 23:15:55,216 - INFO - 127.0.0.1 - - [02/Apr/2025 23:15:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-02 23:15:55,569 - INFO - 127.0.0.1 - - [02/Apr/2025 23:15:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-04-02 23:22:28,202 - INFO - Model and scaler loaded successfully
+2025-04-02 23:22:28,250 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.58.31.209:5000
+2025-04-02 23:22:28,250 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 23:22:28,269 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:22:32,504 - INFO - Model and scaler loaded successfully
+2025-04-02 23:22:32,531 - WARNING -  * Debugger is active!
+2025-04-02 23:22:32,536 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:22:47,008 - INFO - 127.0.0.1 - - [02/Apr/2025 23:22:47] "GET / HTTP/1.1" 200 -
+2025-04-02 23:22:47,225 - INFO - 127.0.0.1 - - [02/Apr/2025 23:22:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-02 23:22:47,283 - INFO - 127.0.0.1 - - [02/Apr/2025 23:22:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-02 23:23:13,793 - ERROR - Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-04-02 23:23:13,793 - INFO - 127.0.0.1 - - [02/Apr/2025 23:23:13] "POST / HTTP/1.1" 200 -
+2025-04-02 23:23:13,809 - INFO - 127.0.0.1 - - [02/Apr/2025 23:23:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

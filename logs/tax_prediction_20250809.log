@@ -1,0 +1,17 @@
+2025-08-09 21:27:56,021 - INFO - Available models: ['embedding-gecko-001', 'gemini-1.5-pro-latest', 'gemini-1.5-pro-002', 'gemini-1.5-pro', 'gemini-1.5-flash-latest', 'gemini-1.5-flash', 'gemini-1.5-flash-002', 'gemini-1.5-flash-8b', 'gemini-1.5-flash-8b-001', 'gemini-1.5-flash-8b-latest', 'gemini-2.5-pro-preview-03-25', 'gemini-2.5-flash-preview-05-20', 'gemini-2.5-flash', 'gemini-2.5-flash-lite-preview-06-17', 'gemini-2.5-pro-preview-05-06', 'gemini-2.5-pro-preview-06-05', 'gemini-2.5-pro', 'gemini-2.0-flash-exp', 'gemini-2.0-flash', 'gemini-2.0-flash-001', 'gemini-2.0-flash-exp-image-generation', 'gemini-2.0-flash-lite-001', 'gemini-2.0-flash-lite', 'gemini-2.0-flash-preview-image-generation', 'gemini-2.0-flash-lite-preview-02-05', 'gemini-2.0-flash-lite-preview', 'gemini-2.0-pro-exp', 'gemini-2.0-pro-exp-02-05', 'gemini-exp-1206', 'gemini-2.0-flash-thinking-exp-01-21', 'gemini-2.0-flash-thinking-exp', 'gemini-2.0-flash-thinking-exp-1219', 'gemini-2.5-flash-preview-tts', 'gemini-2.5-pro-preview-tts', 'learnlm-2.0-flash-experimental', 'gemma-3-1b-it', 'gemma-3-4b-it', 'gemma-3-12b-it', 'gemma-3-27b-it', 'gemma-3n-e4b-it', 'gemma-3n-e2b-it', 'gemini-2.5-flash-lite', 'embedding-001', 'text-embedding-004', 'gemini-embedding-exp-03-07', 'gemini-embedding-exp', 'gemini-embedding-001', 'aqa', 'imagen-3.0-generate-002', 'imagen-4.0-generate-preview-06-06', 'imagen-4.0-ultra-generate-preview-06-06', 'veo-2.0-generate-001', 'veo-3.0-generate-preview', 'veo-3.0-fast-generate-preview', 'gemini-2.5-flash-preview-native-audio-dialog', 'gemini-2.5-flash-exp-native-audio-thinking-dialog', 'gemini-2.0-flash-live-001', 'gemini-live-2.5-flash-preview', 'gemini-2.5-flash-live-preview']
+2025-08-09 21:27:56,024 - INFO - Using gemini-1.5-pro model
+2025-08-09 21:27:56,025 - INFO - Gemini API initialized successfully
+2025-08-09 21:28:04,132 - ERROR - Error getting response from Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+violations {
+}
+violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 11
+}
+]

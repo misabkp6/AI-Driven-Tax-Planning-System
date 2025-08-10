@@ -1,0 +1,386 @@
+2025-04-04 21:48:12,589 - WARNING - High correlations detected between features:
+2025-04-04 21:48:12,591 - WARNING -   Age - age_group: 0.9682
+2025-04-04 21:48:12,591 - WARNING -   NumDependents - dependent_factor: 1.0000
+2025-04-04 21:48:12,592 - WARNING -   expense_complexity - business_efficiency: 1.0000
+2025-04-04 21:48:12,635 - ERROR - Data validation failed: 'Categorical' with dtype category does not support reduction 'var'
+2025-04-04 21:48:12,636 - ERROR - Training failed: Data validation failed
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 268, in main
+    X, y = trainer.load_data(file_path)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 169, in load_data
+    raise ValueError("Data validation failed")
+ValueError: Data validation failed
+2025-04-04 21:55:27,902 - WARNING - High correlations detected between features:
+2025-04-04 21:55:27,902 - WARNING -   Age - age_normalized: 1.0000
+2025-04-04 21:55:27,903 - WARNING -   NumDependents - dependent_impact: 1.0000
+2025-04-04 21:55:27,903 - WARNING -   expense_complexity - business_efficiency: 1.0000
+2025-04-04 21:55:27,991 - WARNING - Low variance features detected:
+2025-04-04 21:55:27,991 - WARNING -   income_investment_ratio: 0.005202
+2025-04-04 21:55:27,992 - WARNING -   deduction_rate: 0.008550
+2025-04-04 21:55:27,992 - WARNING -   income_diversity: 0.009090
+2025-04-04 21:55:27,992 - WARNING -   hra_utilization: 0.001698
+2025-04-04 21:55:27,993 - WARNING -   financial_health_score: 0.009220
+2025-04-04 21:55:27,993 - WARNING -   tax_efficiency_ratio: 0.009427
+2025-04-04 22:00:55,449 - WARNING - High correlations detected between features:
+2025-04-04 22:00:55,449 - WARNING -   Age - age_normalized: 1.0000
+2025-04-04 22:00:55,450 - WARNING -   NumDependents - dependent_impact: 1.0000
+2025-04-04 22:00:55,450 - WARNING -   expense_complexity - business_efficiency: 1.0000
+2025-04-04 22:00:55,538 - WARNING - Low variance features detected:
+2025-04-04 22:00:55,539 - WARNING -   income_investment_ratio: 0.005202
+2025-04-04 22:00:55,539 - WARNING -   deduction_rate: 0.008550
+2025-04-04 22:00:55,539 - WARNING -   income_diversity: 0.009090
+2025-04-04 22:00:55,540 - WARNING -   hra_utilization: 0.001698
+2025-04-04 22:00:55,540 - WARNING -   financial_health_score: 0.009220
+2025-04-04 22:00:55,541 - WARNING -   tax_efficiency_ratio: 0.009427
+2025-04-04 22:22:56,667 - ERROR - Training failed: OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 177, in main
+    best_params = trainer.optimize_hyperparameters(X_train, y_train)
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 138, in optimize_hyperparameters
+    pipeline = self.create_pipeline()
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 110, in create_pipeline
+    ('cat', OneHotEncoder(drop='first', sparse=False),
+            ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+2025-04-04 22:28:16,107 - ERROR - Training failed: 
+All the 50 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+50 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 662, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\sklearn.py", line 1247, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params,
+        ^^^^^^^
+    ...<9 lines>...
+        callbacks=self.callbacks,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\training.py", line 184, in train
+    if cb_container.after_iteration(bst, i, dtrain, evals):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\callback.py", line 267, in after_iteration
+    ret = any(c.after_iteration(model, epoch, self.history) for c in self.callbacks)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\callback.py", line 267, in <genexpr>
+    ret = any(c.after_iteration(model, epoch, self.history) for c in self.callbacks)
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\callback.py", line 463, in after_iteration
+    raise ValueError(msg)
+ValueError: Must have at least 1 validation dataset for early stopping.
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 196, in main
+    best_params = trainer.optimize_hyperparameters(X_train, y_train)
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 171, in optimize_hyperparameters
+    search.fit(X, y)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_search.py", line 1951, in _run_search
+    evaluate_candidates(
+    ~~~~~~~~~~~~~~~~~~~^
+        ParameterSampler(
+        ^^^^^^^^^^^^^^^^^
+            self.param_distributions, self.n_iter, random_state=self.random_state
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_search.py", line 1001, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 50 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+50 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 662, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\sklearn.py", line 1247, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params,
+        ^^^^^^^
+    ...<9 lines>...
+        callbacks=self.callbacks,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\training.py", line 184, in train
+    if cb_container.after_iteration(bst, i, dtrain, evals):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\callback.py", line 267, in after_iteration
+    ret = any(c.after_iteration(model, epoch, self.history) for c in self.callbacks)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\callback.py", line 267, in <genexpr>
+    ret = any(c.after_iteration(model, epoch, self.history) for c in self.callbacks)
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\callback.py", line 463, in after_iteration
+    raise ValueError(msg)
+ValueError: Must have at least 1 validation dataset for early stopping.
+
+2025-04-04 22:34:24,491 - ERROR - Training failed: XGBModel.fit() got an unexpected keyword argument 'early_stopping_rounds'
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 214, in main
+    pipeline.fit(
+    ~~~~~~~~~~~~^
+        X_train_final, y_train_final,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        regressor__verbose=0
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 662, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBModel.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2025-04-05 01:16:56,386 - ERROR - Training failed: Found unknown categories ['Private'] in column 1 during fit
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 216, in main
+    cv_metrics = trainer.cross_validate(X_train, y_train)
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 179, in cross_validate
+    pipeline.fit(X_train_cv, y_train_cv)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 654, in fit
+    Xt = self._fit(X, y, routed_params, raw_params=params)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 588, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+                            ~~~~~~~~~~~~~~~~~~~~~~~~^
+        cloned_transformer,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        params=step_params,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\joblib\memory.py", line 312, in __call__
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 1551, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\compose\_column_transformer.py", line 1001, in fit_transform
+    result = self._call_func_on_transformers(
+        X,
+    ...<3 lines>...
+        routed_params=routed_params,
+    )
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\compose\_column_transformer.py", line 910, in _call_func_on_transformers
+    return Parallel(n_jobs=self.n_jobs)(jobs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 1551, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 921, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\preprocessing\_encoders.py", line 991, in fit
+    self._fit(
+    ~~~~~~~~~^
+        X,
+        ^^
+        handle_unknown=self.handle_unknown,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ensure_all_finite="allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\preprocessing\_encoders.py", line 164, in _fit
+    raise ValueError(msg)
+ValueError: Found unknown categories ['Private'] in column 1 during fit
+2025-04-06 13:53:19,095 - ERROR - Training failed: keys must be str, int, float, bool or None, not int64
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 134, in main
+    save_model(pipeline, metrics, le_dict)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 116, in save_model
+    json.dump(metadata, f, indent=4)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 377, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+                    f'not {key.__class__.__name__}')
+TypeError: keys must be str, int, float, bool or None, not int64
+2025-04-06 13:56:14,946 - ERROR - Training failed: Missing required columns: ['Investments']
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 152, in main
+    X, y, le_dict = prepare_data(df)
+                    ~~~~~~~~~~~~^^^^
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 60, in prepare_data
+    raise ValueError(f"Missing required columns: {missing_cols}")
+ValueError: Missing required columns: ['Investments']
+2025-04-06 13:59:23,377 - ERROR - Training failed: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 200, in main
+    save_model(pipeline, metrics, le_dict)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 168, in save_model
+    serializable_params = convert_to_serializable(model_params)
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 34, in convert_to_serializable
+    elif isinstance(obj, (np.float_, np.float16, np.float32, np.float64)):
+                          ^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\numpy\__init__.py", line 413, in __getattr__
+    raise AttributeError(
+    ...<3 lines>...
+    )
+AttributeError: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
+2025-04-06 14:07:19,021 - ERROR - Training failed: "['AnnualIncome'] not in index"
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 209, in main
+    X, y, le_dict = prepare_data(df)
+                    ~~~~~~~~~~~~^^^^
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\Train_rec.py", line 125, in prepare_data
+    X = df[feature_columns]
+        ~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['AnnualIncome'] not in index"
+2025-04-06 14:32:57,701 - ERROR - Training failed: invalid literal for int() with base 10: 'Single'
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 215, in main
+    cv_metrics = trainer.cross_validate(X_train, y_train)
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\train_model.py", line 178, in cross_validate
+    pipeline.fit(X_train_cv, y_train_cv)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 654, in fit
+    Xt = self._fit(X, y, routed_params, raw_params=params)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 588, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+                            ~~~~~~~~~~~~~~~~~~~~~~~~^
+        cloned_transformer,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        params=step_params,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\joblib\memory.py", line 312, in __call__
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 1551, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\compose\_column_transformer.py", line 1001, in fit_transform
+    result = self._call_func_on_transformers(
+        X,
+    ...<3 lines>...
+        routed_params=routed_params,
+    )
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\compose\_column_transformer.py", line 910, in _call_func_on_transformers
+    return Parallel(n_jobs=self.n_jobs)(jobs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 1551, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 921, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\preprocessing\_encoders.py", line 991, in fit
+    self._fit(
+    ~~~~~~~~~^
+        X,
+        ^^
+        handle_unknown=self.handle_unknown,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ensure_all_finite="allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\preprocessing\_encoders.py", line 118, in _fit
+    cats = np.array(self.categories[i], dtype=Xi_dtype)
+ValueError: invalid literal for int() with base 10: 'Single'

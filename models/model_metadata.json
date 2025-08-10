@@ -1,0 +1,93 @@
+{
+    "training_date": "2025-04-22 10:36:02",
+    "model_version": "3.2.0",
+    "performance_metrics": {
+        "train_r2": 0.9137434959411621,
+        "test_r2": 0.913680911064148,
+        "train_rmse": 117396.7309936695,
+        "test_rmse": 117317.90928924705,
+        "train_mae": 100125.578125,
+        "test_mae": 100078.375,
+        "cv_metrics": {
+            "cv_r2_mean": 0.9136145949363709,
+            "cv_r2_std": 0.00020428039165580088,
+            "cv_rmse_mean": 117482.22417639887,
+            "cv_rmse_std": 429.9071601632434
+        }
+    },
+    "feature_names": [
+        "AnnualIncome",
+        "Investments",
+        "Deductions",
+        "Age",
+        "MaritalStatus",
+        "NumDependents",
+        "EmploymentType",
+        "BusinessExpenses",
+        "HRA",
+        "OtherIncome",
+        "investment_rate",
+        "expense_ratio",
+        "deduction_ratio",
+        "hra_ratio",
+        "total_income",
+        "net_income",
+        "tax_bracket",
+        "age_group",
+        "dependent_factor"
+    ],
+    "categories": {
+        "MaritalStatus": [
+            "Single",
+            "Married",
+            "Divorced"
+        ],
+        "EmploymentType": [
+            "Private",
+            "Public",
+            "Self-Employed"
+        ]
+    },
+    "hyperparameters": {
+        "objective": "reg:squarederror",
+        "base_score": null,
+        "booster": null,
+        "callbacks": null,
+        "colsample_bylevel": null,
+        "colsample_bynode": null,
+        "colsample_bytree": 0.7,
+        "device": null,
+        "early_stopping_rounds": null,
+        "enable_categorical": false,
+        "eval_metric": null,
+        "feature_types": null,
+        "feature_weights": null,
+        "gamma": null,
+        "grow_policy": null,
+        "importance_type": null,
+        "interaction_constraints": null,
+        "learning_rate": 0.03,
+        "max_bin": null,
+        "max_cat_threshold": null,
+        "max_cat_to_onehot": null,
+        "max_delta_step": null,
+        "max_depth": 3,
+        "max_leaves": null,
+        "min_child_weight": 3,
+        "missing": NaN,
+        "monotone_constraints": null,
+        "multi_strategy": null,
+        "n_estimators": 50,
+        "n_jobs": -1,
+        "num_parallel_tree": null,
+        "random_state": 42,
+        "reg_alpha": 0.01,
+        "reg_lambda": 1.0,
+        "sampling_method": null,
+        "scale_pos_weight": null,
+        "subsample": 0.7,
+        "tree_method": null,
+        "validate_parameters": null,
+        "verbosity": null
+    }
+}

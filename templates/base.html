@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tax Prediction & Planning</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        input[type=submit] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+        h2 {
+            color: #333;
+        }
+        .output {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tax Prediction and Investment Optimizer</h2>
+        <form action="/predict" method="post">
+            <label>Annual Income:</label>
+            <input type="number" name="income" required>
+
+            <label>Investments (80C):</label>
+            <input type="number" name="investments" required>
+
+            <label>Deductions:</label>
+            <input type="number" name="deductions" required>
+
+            <label>Previous Tax Paid:</label>
+            <input type="number" name="previous_tax" required>
+
+            <label>Age:</label>
+            <input type="number" name="age" required>
+
+            <label>Marital Status:</label>
+            <select name="marital_status" required>
+                <option value="0">Single</option>
+                <option value="1">Married</option>
+            </select>
+
+            <label>Number of Dependents:</label>
+            <input type="number" name="dependents" required>
+
+            <label>Employment Type:</label>
+            <select name="employment_type" required>
+                <option value="Salaried">Salaried</option>
+                <option value="Self-Employed">Self-Employed</option>
+                <option value="Unemployed">Unemployed</option>
+            </select>
+
+            <label>Business Expenses:</label>
+            <input type="number" name="business_expenses" required>
+
+            <label>House Rent Allowance (HRA):</label>
+            <input type="number" name="hra" required>
+
+            <label>Other Income:</label>
+            <input type="number" name="other_income" required>
+
+            <input type="submit" value="Predict Tax">
+        </form>
+
+        {% if prediction %}
+        <div class="output">
+            <strong>{{ prediction }}</strong><br>
+            {{ optimizer }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

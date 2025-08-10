@@ -1,0 +1,85 @@
+{
+    "training_date": "2025-04-26 19:56:07",
+    "model_version": "2.0.0",
+    "feature_encodings": {
+        "EmploymentType": {
+            "classes": [
+                "Business",
+                "Government",
+                "Private",
+                "Retired",
+                "Self-Employed"
+            ],
+            "mappings": {
+                "Business": 0,
+                "Government": 1,
+                "Private": 2,
+                "Retired": 3,
+                "Self-Employed": 4
+            }
+        },
+        "MaritalStatus": {
+            "classes": [
+                "Married",
+                "Single"
+            ],
+            "mappings": {
+                "Married": 0,
+                "Single": 1
+            }
+        }
+    },
+    "performance_metrics": {
+        "train_accuracy": 0.9965277777777778,
+        "test_accuracy": 0.9916666666666667,
+        "cv_accuracy_mean": 0.9894444444444446,
+        "cv_accuracy_std": 0.004082482904638649,
+        "classification_report": "                         precision    recall  f1-score   support\n\n         80C_Investment       0.87      1.00      0.93        20\nAggressive_Tax_Planning       1.00      1.00      1.00        54\n   High_Income_Strategy       1.00      1.00      1.00       105\n        Senior_Planning       1.00      1.00      1.00       108\n      Standard_Planning       1.00      0.96      0.98        73\n\n               accuracy                           0.99       360\n              macro avg       0.97      0.99      0.98       360\n           weighted avg       0.99      0.99      0.99       360\n",
+        "feature_importance": {
+            "importance": {
+                "AnnualIncome": 0.4054659099904243,
+                "Age": 0.2752213092753697,
+                "Investments": 0.2037719447823735,
+                "HRA": 0.07428027714285546,
+                "Deductions": 0.027580357631936513,
+                "EmploymentType": 0.007427312425716428,
+                "MaritalStatus": 0.006252888751324129
+            }
+        }
+    },
+    "model_parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 10,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 200,
+        "n_jobs": -1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+    },
+    "target_classes": [
+        "80C_Investment",
+        "Aggressive_Tax_Planning",
+        "High_Income_Strategy",
+        "Senior_Planning",
+        "Standard_Planning"
+    ],
+    "strategy_mapping": {
+        "80C_Investment": 0,
+        "Aggressive_Tax_Planning": 1,
+        "High_Income_Strategy": 2,
+        "Senior_Planning": 3,
+        "Standard_Planning": 4
+    }
+}

@@ -1,0 +1,253 @@
+2025-04-23 00:36:35,601 - INFO - Available models: ['chat-bison-001', 'text-bison-001', 'embedding-gecko-001', 'gemini-1.0-pro-vision-latest', 'gemini-pro-vision', 'gemini-1.5-pro-latest', 'gemini-1.5-pro-001', 'gemini-1.5-pro-002', 'gemini-1.5-pro', 'gemini-1.5-flash-latest', 'gemini-1.5-flash-001', 'gemini-1.5-flash-001-tuning', 'gemini-1.5-flash', 'gemini-1.5-flash-002', 'gemini-1.5-flash-8b', 'gemini-1.5-flash-8b-001', 'gemini-1.5-flash-8b-latest', 'gemini-1.5-flash-8b-exp-0827', 'gemini-1.5-flash-8b-exp-0924', 'gemini-2.5-pro-exp-03-25', 'gemini-2.5-pro-preview-03-25', 'gemini-2.5-flash-preview-04-17', 'gemini-2.0-flash-exp', 'gemini-2.0-flash', 'gemini-2.0-flash-001', 'gemini-2.0-flash-exp-image-generation', 'gemini-2.0-flash-lite-001', 'gemini-2.0-flash-lite', 'gemini-2.0-flash-lite-preview-02-05', 'gemini-2.0-flash-lite-preview', 'gemini-2.0-pro-exp', 'gemini-2.0-pro-exp-02-05', 'gemini-exp-1206', 'gemini-2.0-flash-thinking-exp-01-21', 'gemini-2.0-flash-thinking-exp', 'gemini-2.0-flash-thinking-exp-1219', 'learnlm-1.5-pro-experimental', 'learnlm-2.0-flash-experimental', 'gemma-3-1b-it', 'gemma-3-4b-it', 'gemma-3-12b-it', 'gemma-3-27b-it', 'embedding-001', 'text-embedding-004', 'gemini-embedding-exp-03-07', 'gemini-embedding-exp', 'aqa', 'imagen-3.0-generate-002', 'gemini-2.0-flash-live-001']
+2025-04-23 00:36:35,605 - INFO - Using gemini-1.5-pro model
+2025-04-23 00:36:35,607 - INFO - Gemini API initialized successfully
+2025-04-23 00:36:52,812 - INFO - Predicting strategy for input: {'AnnualIncome': 820000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 120000, 'Age': 35, 'EmploymentType': 'Private', 'MaritalStatus': 'Single', 'TaxLiability': 13000.0, 'TaxSavings': 242840.0}
+2025-04-23 00:36:55,691 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 00:36:55,693 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 00:36:55,693 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 00:36:55,694 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 00:36:55,700 - INFO - Making prediction with features: [{'AnnualIncome': 820000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 120000, 'Age': 35, 'EmploymentType': 'Private', 'MaritalStatus': 'Single'}]
+2025-04-23 00:36:55,700 - INFO - Encoding EmploymentType = Private using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 00:36:55,702 - INFO - Encoding MaritalStatus = Single using available classes: ['Married', 'Single']
+2025-04-23 00:36:55,703 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 00:36:55,803 - INFO - Raw model prediction: 80C_Investment
+2025-04-23 00:36:55,805 - INFO - Class probabilities: [0.7734369  0.11718806 0.010158   0.01306159 0.08615544]
+2025-04-23 00:36:55,805 - INFO - Model confidence: 0.7734
+2025-04-23 00:36:55,806 - INFO - Recommendations customized based on: Age=35, Income=820000, 80C=150000
+2025-04-23 00:36:55,806 - INFO - Prediction successful: Strategy=Comprehensive 80C Investment Strategy
+2025-04-23 00:37:54,369 - INFO - Predicting strategy for input: {'AnnualIncome': 820000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 120000, 'Age': 35, 'EmploymentType': 'Private', 'MaritalStatus': 'Single', 'TaxLiability': 13000.0, 'TaxSavings': 242840.0}
+2025-04-23 00:37:54,565 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 00:37:54,566 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 00:37:54,567 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 00:37:54,567 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 00:37:54,570 - INFO - Making prediction with features: [{'AnnualIncome': 820000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 120000, 'Age': 35, 'EmploymentType': 'Private', 'MaritalStatus': 'Single'}]
+2025-04-23 00:37:54,571 - INFO - Encoding EmploymentType = Private using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 00:37:54,572 - INFO - Encoding MaritalStatus = Single using available classes: ['Married', 'Single']
+2025-04-23 00:37:54,573 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 00:37:54,662 - INFO - Raw model prediction: 80C_Investment
+2025-04-23 00:37:54,663 - INFO - Class probabilities: [0.7734369  0.11718806 0.010158   0.01306159 0.08615544]
+2025-04-23 00:37:54,663 - INFO - Model confidence: 0.7734
+2025-04-23 00:37:54,664 - INFO - Recommendations customized based on: Age=35, Income=820000, 80C=150000
+2025-04-23 00:37:54,665 - INFO - Prediction successful: Strategy=Comprehensive 80C Investment Strategy
+2025-04-23 00:38:05,424 - INFO - Predicting strategy for input: {'AnnualIncome': 820000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 120000, 'Age': 35, 'EmploymentType': 'Private', 'MaritalStatus': 'Single', 'TaxLiability': 13000.0, 'TaxSavings': 242840.0}
+2025-04-23 00:38:05,619 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 00:38:05,620 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 00:38:05,620 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 00:38:05,621 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 00:38:05,623 - INFO - Making prediction with features: [{'AnnualIncome': 820000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 120000, 'Age': 35, 'EmploymentType': 'Private', 'MaritalStatus': 'Single'}]
+2025-04-23 00:38:05,624 - INFO - Encoding EmploymentType = Private using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 00:38:05,625 - INFO - Encoding MaritalStatus = Single using available classes: ['Married', 'Single']
+2025-04-23 00:38:05,626 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 00:38:05,762 - INFO - Raw model prediction: 80C_Investment
+2025-04-23 00:38:05,765 - INFO - Class probabilities: [0.7734369  0.11718806 0.010158   0.01306159 0.08615544]
+2025-04-23 00:38:05,766 - INFO - Model confidence: 0.7734
+2025-04-23 00:38:05,768 - INFO - Recommendations customized based on: Age=35, Income=820000, 80C=150000
+2025-04-23 00:38:05,770 - INFO - Prediction successful: Strategy=Comprehensive 80C Investment Strategy
+2025-04-23 11:36:20,457 - INFO - Predicting strategy for input: {'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married', 'TaxLiability': 5200.0, 'TaxSavings': 166400.0}
+2025-04-23 11:36:23,613 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 11:36:23,615 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 11:36:23,616 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 11:36:23,616 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 11:36:23,630 - INFO - Making prediction with features: [{'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married'}]
+2025-04-23 11:36:23,633 - INFO - Encoding EmploymentType = Retired using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 11:36:23,635 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 11:36:23,637 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 11:36:23,751 - INFO - Raw model prediction: Senior_Planning
+2025-04-23 11:36:23,751 - INFO - Class probabilities: [0.02448912 0.         0.         0.95678522 0.01872567]
+2025-04-23 11:36:23,752 - INFO - Model confidence: 0.9568
+2025-04-23 11:36:23,752 - INFO - Recommendations customized based on: Age=77, Income=550000, 80C=100000
+2025-04-23 11:36:23,752 - INFO - Prediction successful: Strategy=Comprehensive Senior Citizen Tax Strategy
+2025-04-23 11:36:29,884 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-04-23 11:36:29,885 - INFO - Gemini API initialized successfully
+2025-04-23 11:36:39,317 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-04-23 11:36:39,317 - INFO - Gemini API initialized successfully
+2025-04-23 11:36:40,854 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-04-23 11:36:40,855 - INFO - Gemini API initialized successfully
+2025-04-23 11:36:53,229 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-04-23 11:36:53,231 - INFO - Gemini API initialized successfully
+2025-04-23 11:37:02,864 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:142.250.195.138:443: tcp handshaker shutdown. Trying default model.
+2025-04-23 11:37:02,864 - INFO - Gemini API initialized successfully
+2025-04-23 11:37:04,534 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:142.250.195.138:443: tcp handshaker shutdown. Trying default model.
+2025-04-23 11:37:04,536 - INFO - Gemini API initialized successfully
+2025-04-23 11:37:09,615 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:142.250.195.138:443: socket is null. Trying default model.
+2025-04-23 11:37:09,616 - INFO - Gemini API initialized successfully
+2025-04-23 11:37:11,123 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:142.250.195.138:443: tcp handshaker shutdown. Trying default model.
+2025-04-23 11:37:11,123 - INFO - Gemini API initialized successfully
+2025-04-23 11:37:14,512 - INFO - Predicting strategy for input: {'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married', 'TaxLiability': 5200.0, 'TaxSavings': 166400.0}
+2025-04-23 11:37:14,898 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 11:37:14,899 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 11:37:14,900 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 11:37:14,901 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 11:37:14,904 - INFO - Making prediction with features: [{'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married'}]
+2025-04-23 11:37:14,905 - INFO - Encoding EmploymentType = Retired using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 11:37:14,907 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 11:37:14,909 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 11:37:15,083 - INFO - Raw model prediction: Senior_Planning
+2025-04-23 11:37:15,087 - INFO - Class probabilities: [0.02448912 0.         0.         0.95678522 0.01872567]
+2025-04-23 11:37:15,089 - INFO - Model confidence: 0.9568
+2025-04-23 11:37:15,090 - INFO - Recommendations customized based on: Age=77, Income=550000, 80C=100000
+2025-04-23 11:37:15,093 - INFO - Prediction successful: Strategy=Comprehensive Senior Citizen Tax Strategy
+2025-04-23 11:37:16,066 - INFO - Available models: ['chat-bison-001', 'text-bison-001', 'embedding-gecko-001', 'gemini-1.0-pro-vision-latest', 'gemini-pro-vision', 'gemini-1.5-pro-latest', 'gemini-1.5-pro-001', 'gemini-1.5-pro-002', 'gemini-1.5-pro', 'gemini-1.5-flash-latest', 'gemini-1.5-flash-001', 'gemini-1.5-flash-001-tuning', 'gemini-1.5-flash', 'gemini-1.5-flash-002', 'gemini-1.5-flash-8b', 'gemini-1.5-flash-8b-001', 'gemini-1.5-flash-8b-latest', 'gemini-1.5-flash-8b-exp-0827', 'gemini-1.5-flash-8b-exp-0924', 'gemini-2.5-pro-exp-03-25', 'gemini-2.5-pro-preview-03-25', 'gemini-2.5-flash-preview-04-17', 'gemini-2.0-flash-exp', 'gemini-2.0-flash', 'gemini-2.0-flash-001', 'gemini-2.0-flash-exp-image-generation', 'gemini-2.0-flash-lite-001', 'gemini-2.0-flash-lite', 'gemini-2.0-flash-lite-preview-02-05', 'gemini-2.0-flash-lite-preview', 'gemini-2.0-pro-exp', 'gemini-2.0-pro-exp-02-05', 'gemini-exp-1206', 'gemini-2.0-flash-thinking-exp-01-21', 'gemini-2.0-flash-thinking-exp', 'gemini-2.0-flash-thinking-exp-1219', 'learnlm-1.5-pro-experimental', 'learnlm-2.0-flash-experimental', 'gemma-3-1b-it', 'gemma-3-4b-it', 'gemma-3-12b-it', 'gemma-3-27b-it', 'embedding-001', 'text-embedding-004', 'gemini-embedding-exp-03-07', 'gemini-embedding-exp', 'aqa', 'imagen-3.0-generate-002', 'gemini-2.0-flash-live-001']
+2025-04-23 11:37:16,069 - INFO - Using gemini-1.5-pro model
+2025-04-23 11:37:16,070 - INFO - Gemini API initialized successfully
+2025-04-23 11:37:16,073 - INFO - User data set: {'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married', 'TaxLiability': 5200.0, 'TaxSavings': 166400.0}
+2025-04-23 11:37:24,929 - INFO - Available models: ['chat-bison-001', 'text-bison-001', 'embedding-gecko-001', 'gemini-1.0-pro-vision-latest', 'gemini-pro-vision', 'gemini-1.5-pro-latest', 'gemini-1.5-pro-001', 'gemini-1.5-pro-002', 'gemini-1.5-pro', 'gemini-1.5-flash-latest', 'gemini-1.5-flash-001', 'gemini-1.5-flash-001-tuning', 'gemini-1.5-flash', 'gemini-1.5-flash-002', 'gemini-1.5-flash-8b', 'gemini-1.5-flash-8b-001', 'gemini-1.5-flash-8b-latest', 'gemini-1.5-flash-8b-exp-0827', 'gemini-1.5-flash-8b-exp-0924', 'gemini-2.5-pro-exp-03-25', 'gemini-2.5-pro-preview-03-25', 'gemini-2.5-flash-preview-04-17', 'gemini-2.0-flash-exp', 'gemini-2.0-flash', 'gemini-2.0-flash-001', 'gemini-2.0-flash-exp-image-generation', 'gemini-2.0-flash-lite-001', 'gemini-2.0-flash-lite', 'gemini-2.0-flash-lite-preview-02-05', 'gemini-2.0-flash-lite-preview', 'gemini-2.0-pro-exp', 'gemini-2.0-pro-exp-02-05', 'gemini-exp-1206', 'gemini-2.0-flash-thinking-exp-01-21', 'gemini-2.0-flash-thinking-exp', 'gemini-2.0-flash-thinking-exp-1219', 'learnlm-1.5-pro-experimental', 'learnlm-2.0-flash-experimental', 'gemma-3-1b-it', 'gemma-3-4b-it', 'gemma-3-12b-it', 'gemma-3-27b-it', 'embedding-001', 'text-embedding-004', 'gemini-embedding-exp-03-07', 'gemini-embedding-exp', 'aqa', 'imagen-3.0-generate-002', 'gemini-2.0-flash-live-001']
+2025-04-23 11:37:24,932 - INFO - Using gemini-1.5-pro model
+2025-04-23 11:37:24,934 - INFO - Gemini API initialized successfully
+2025-04-23 11:48:30,054 - INFO - Predicting strategy for input: {'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married', 'TaxLiability': 5200.0, 'TaxSavings': 166400.0}
+2025-04-23 11:48:30,300 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 11:48:30,308 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 11:48:30,309 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 11:48:30,310 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 11:48:30,315 - INFO - Making prediction with features: [{'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married'}]
+2025-04-23 11:48:30,316 - INFO - Encoding EmploymentType = Retired using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 11:48:30,318 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 11:48:30,319 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 11:48:30,490 - INFO - Raw model prediction: Senior_Planning
+2025-04-23 11:48:30,492 - INFO - Class probabilities: [0.02448912 0.         0.         0.95678522 0.01872567]
+2025-04-23 11:48:30,494 - INFO - Model confidence: 0.9568
+2025-04-23 11:48:30,495 - INFO - Recommendations customized based on: Age=77, Income=550000, 80C=100000
+2025-04-23 11:48:30,496 - INFO - Prediction successful: Strategy=Comprehensive Senior Citizen Tax Strategy
+2025-04-23 11:48:44,762 - INFO - Predicting strategy for input: {'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married', 'TaxLiability': 5200.0, 'TaxSavings': 166400.0}
+2025-04-23 11:48:44,968 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 11:48:44,969 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 11:48:44,970 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 11:48:44,970 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 11:48:44,973 - INFO - Making prediction with features: [{'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 77, 'EmploymentType': 'Retired', 'MaritalStatus': 'Married'}]
+2025-04-23 11:48:44,974 - INFO - Encoding EmploymentType = Retired using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 11:48:44,975 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 11:48:44,976 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 11:48:45,099 - INFO - Raw model prediction: Senior_Planning
+2025-04-23 11:48:45,101 - INFO - Class probabilities: [0.02448912 0.         0.         0.95678522 0.01872567]
+2025-04-23 11:48:45,102 - INFO - Model confidence: 0.9568
+2025-04-23 11:48:45,103 - INFO - Recommendations customized based on: Age=77, Income=550000, 80C=100000
+2025-04-23 11:48:45,105 - INFO - Prediction successful: Strategy=Comprehensive Senior Citizen Tax Strategy
+2025-04-23 11:49:27,674 - INFO - Predicting strategy for input: {'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 43, 'EmploymentType': 'Government', 'MaritalStatus': 'Married', 'TaxLiability': 5200.0, 'TaxSavings': 166400.0}
+2025-04-23 11:49:27,760 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 11:49:27,761 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 11:49:27,761 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 11:49:27,761 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 11:49:27,764 - INFO - Making prediction with features: [{'AnnualIncome': 550000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 50000, 'Age': 43, 'EmploymentType': 'Government', 'MaritalStatus': 'Married'}]
+2025-04-23 11:49:27,764 - INFO - Encoding EmploymentType = Government using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 11:49:27,765 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 11:49:27,766 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 11:49:27,822 - INFO - Raw model prediction: Standard_Planning
+2025-04-23 11:49:27,823 - INFO - Class probabilities: [0.02331266 0.04370355 0.00333566 0.01030395 0.91934419]
+2025-04-23 11:49:27,823 - INFO - Model confidence: 0.9193
+2025-04-23 11:49:27,823 - INFO - Recommendations customized based on: Age=43, Income=550000, 80C=100000
+2025-04-23 11:49:27,824 - INFO - Prediction successful: Strategy=Comprehensive Standard Tax Planning
+2025-04-23 11:49:56,440 - INFO - Available models: ['chat-bison-001', 'text-bison-001', 'embedding-gecko-001', 'gemini-1.0-pro-vision-latest', 'gemini-pro-vision', 'gemini-1.5-pro-latest', 'gemini-1.5-pro-001', 'gemini-1.5-pro-002', 'gemini-1.5-pro', 'gemini-1.5-flash-latest', 'gemini-1.5-flash-001', 'gemini-1.5-flash-001-tuning', 'gemini-1.5-flash', 'gemini-1.5-flash-002', 'gemini-1.5-flash-8b', 'gemini-1.5-flash-8b-001', 'gemini-1.5-flash-8b-latest', 'gemini-1.5-flash-8b-exp-0827', 'gemini-1.5-flash-8b-exp-0924', 'gemini-2.5-pro-exp-03-25', 'gemini-2.5-pro-preview-03-25', 'gemini-2.5-flash-preview-04-17', 'gemini-2.0-flash-exp', 'gemini-2.0-flash', 'gemini-2.0-flash-001', 'gemini-2.0-flash-exp-image-generation', 'gemini-2.0-flash-lite-001', 'gemini-2.0-flash-lite', 'gemini-2.0-flash-lite-preview-02-05', 'gemini-2.0-flash-lite-preview', 'gemini-2.0-pro-exp', 'gemini-2.0-pro-exp-02-05', 'gemini-exp-1206', 'gemini-2.0-flash-thinking-exp-01-21', 'gemini-2.0-flash-thinking-exp', 'gemini-2.0-flash-thinking-exp-1219', 'learnlm-1.5-pro-experimental', 'learnlm-2.0-flash-experimental', 'gemma-3-1b-it', 'gemma-3-4b-it', 'gemma-3-12b-it', 'gemma-3-27b-it', 'embedding-001', 'text-embedding-004', 'gemini-embedding-exp-03-07', 'gemini-embedding-exp', 'aqa', 'imagen-3.0-generate-002', 'gemini-2.0-flash-live-001']
+2025-04-23 11:49:56,443 - INFO - Using gemini-1.5-pro model
+2025-04-23 11:49:56,444 - INFO - Gemini API initialized successfully
+2025-04-23 11:50:27,166 - INFO - Predicting strategy for input: {'AnnualIncome': 630000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 10000, 'Age': 35, 'EmploymentType': 'Self-Employed', 'MaritalStatus': 'Single', 'TaxLiability': 8840.0, 'TaxSavings': 187720.0}
+2025-04-23 11:50:27,478 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 11:50:27,479 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 11:50:27,480 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 11:50:27,480 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 11:50:27,484 - INFO - Making prediction with features: [{'AnnualIncome': 630000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 10000, 'Age': 35, 'EmploymentType': 'Self-Employed', 'MaritalStatus': 'Single'}]
+2025-04-23 11:50:27,485 - INFO - Encoding EmploymentType = Self-Employed using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 11:50:27,486 - INFO - Encoding MaritalStatus = Single using available classes: ['Married', 'Single']
+2025-04-23 11:50:27,488 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 11:50:27,578 - INFO - Raw model prediction: 80C_Investment
+2025-04-23 11:50:27,578 - INFO - Class probabilities: [0.77793466 0.11270726 0.01354674 0.01209799 0.08371334]
+2025-04-23 11:50:27,579 - INFO - Model confidence: 0.7779
+2025-04-23 11:50:27,579 - INFO - Recommendations customized based on: Age=35, Income=630000, 80C=150000
+2025-04-23 11:50:27,580 - INFO - Prediction successful: Strategy=Comprehensive 80C Investment Strategy
+2025-04-23 11:51:28,411 - INFO - Predicting strategy for input: {'AnnualIncome': 630000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 10000, 'Age': 35, 'EmploymentType': 'Self-Employed', 'MaritalStatus': 'Single', 'TaxLiability': 8840.0, 'TaxSavings': 187720.0}
+2025-04-23 11:51:28,602 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 11:51:28,603 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 11:51:28,604 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 11:51:28,604 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 11:51:28,607 - INFO - Making prediction with features: [{'AnnualIncome': 630000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 10000, 'Age': 35, 'EmploymentType': 'Self-Employed', 'MaritalStatus': 'Single'}]
+2025-04-23 11:51:28,607 - INFO - Encoding EmploymentType = Self-Employed using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 11:51:28,608 - INFO - Encoding MaritalStatus = Single using available classes: ['Married', 'Single']
+2025-04-23 11:51:28,610 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 11:51:28,696 - INFO - Raw model prediction: 80C_Investment
+2025-04-23 11:51:28,697 - INFO - Class probabilities: [0.77793466 0.11270726 0.01354674 0.01209799 0.08371334]
+2025-04-23 11:51:28,698 - INFO - Model confidence: 0.7779
+2025-04-23 11:51:28,698 - INFO - Recommendations customized based on: Age=35, Income=630000, 80C=150000
+2025-04-23 11:51:28,699 - INFO - Prediction successful: Strategy=Comprehensive 80C Investment Strategy
+2025-04-23 11:51:40,862 - INFO - Predicting strategy for input: {'AnnualIncome': 630000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 10000, 'Age': 35, 'EmploymentType': 'Self-Employed', 'MaritalStatus': 'Single', 'TaxLiability': 8840.0, 'TaxSavings': 187720.0}
+2025-04-23 11:51:41,195 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 11:51:41,197 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 11:51:41,198 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 11:51:41,198 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 11:51:41,202 - INFO - Making prediction with features: [{'AnnualIncome': 630000, 'Investments': 150000, 'Deductions': 50000, 'HRA': 10000, 'Age': 35, 'EmploymentType': 'Self-Employed', 'MaritalStatus': 'Single'}]
+2025-04-23 11:51:41,203 - INFO - Encoding EmploymentType = Self-Employed using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 11:51:41,205 - INFO - Encoding MaritalStatus = Single using available classes: ['Married', 'Single']
+2025-04-23 11:51:41,206 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 11:51:41,340 - INFO - Raw model prediction: 80C_Investment
+2025-04-23 11:51:41,342 - INFO - Class probabilities: [0.77793466 0.11270726 0.01354674 0.01209799 0.08371334]
+2025-04-23 11:51:41,343 - INFO - Model confidence: 0.7779
+2025-04-23 11:51:41,344 - INFO - Recommendations customized based on: Age=35, Income=630000, 80C=150000
+2025-04-23 11:51:41,345 - INFO - Prediction successful: Strategy=Comprehensive 80C Investment Strategy
+2025-04-23 13:10:05,926 - WARNING - Could not list models: Timeout of 60.0s exceeded, last exception: 503 DNS resolution failed for generativelanguage.googleapis.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+ -- 11001). Trying default model.
+2025-04-23 13:10:05,934 - INFO - Gemini API initialized successfully
+2025-04-23 13:57:13,294 - INFO - Available models: ['chat-bison-001', 'text-bison-001', 'embedding-gecko-001', 'gemini-1.0-pro-vision-latest', 'gemini-pro-vision', 'gemini-1.5-pro-latest', 'gemini-1.5-pro-001', 'gemini-1.5-pro-002', 'gemini-1.5-pro', 'gemini-1.5-flash-latest', 'gemini-1.5-flash-001', 'gemini-1.5-flash-001-tuning', 'gemini-1.5-flash', 'gemini-1.5-flash-002', 'gemini-1.5-flash-8b', 'gemini-1.5-flash-8b-001', 'gemini-1.5-flash-8b-latest', 'gemini-1.5-flash-8b-exp-0827', 'gemini-1.5-flash-8b-exp-0924', 'gemini-2.5-pro-exp-03-25', 'gemini-2.5-pro-preview-03-25', 'gemini-2.5-flash-preview-04-17', 'gemini-2.0-flash-exp', 'gemini-2.0-flash', 'gemini-2.0-flash-001', 'gemini-2.0-flash-exp-image-generation', 'gemini-2.0-flash-lite-001', 'gemini-2.0-flash-lite', 'gemini-2.0-flash-lite-preview-02-05', 'gemini-2.0-flash-lite-preview', 'gemini-2.0-pro-exp', 'gemini-2.0-pro-exp-02-05', 'gemini-exp-1206', 'gemini-2.0-flash-thinking-exp-01-21', 'gemini-2.0-flash-thinking-exp', 'gemini-2.0-flash-thinking-exp-1219', 'learnlm-1.5-pro-experimental', 'learnlm-2.0-flash-experimental', 'gemma-3-1b-it', 'gemma-3-4b-it', 'gemma-3-12b-it', 'gemma-3-27b-it', 'embedding-001', 'text-embedding-004', 'gemini-embedding-exp-03-07', 'gemini-embedding-exp', 'aqa', 'imagen-3.0-generate-002', 'gemini-2.0-flash-live-001']
+2025-04-23 13:57:13,297 - INFO - Using gemini-1.5-pro model
+2025-04-23 13:57:13,298 - INFO - Gemini API initialized successfully
+2025-04-23 13:57:58,342 - INFO - Predicting strategy for input: {'AnnualIncome': 560000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 100000, 'Age': 40, 'EmploymentType': 'Business', 'MaritalStatus': 'Married', 'TaxLiability': 3120.0, 'TaxSavings': 171600.0}
+2025-04-23 13:58:05,264 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 13:58:05,273 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 13:58:05,273 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 13:58:05,273 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 13:58:05,283 - INFO - Making prediction with features: [{'AnnualIncome': 560000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 100000, 'Age': 40, 'EmploymentType': 'Business', 'MaritalStatus': 'Married'}]
+2025-04-23 13:58:05,284 - INFO - Encoding EmploymentType = Business using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 13:58:05,286 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 13:58:05,288 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 13:58:05,338 - INFO - Raw model prediction: Standard_Planning
+2025-04-23 13:58:05,339 - INFO - Class probabilities: [1.77079638e-02 4.02656583e-02 1.27052921e-02 9.10804020e-04
+ 9.28410282e-01]
+2025-04-23 13:58:05,340 - INFO - Model confidence: 0.9284
+2025-04-23 13:58:05,340 - INFO - Recommendations customized based on: Age=40, Income=560000, 80C=100000
+2025-04-23 13:58:05,341 - INFO - Prediction successful: Strategy=Comprehensive Standard Tax Planning
+2025-04-23 14:01:18,341 - INFO - Predicting strategy for input: {'AnnualIncome': 560000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 100000, 'Age': 40, 'EmploymentType': 'Business', 'MaritalStatus': 'Married', 'TaxLiability': 3120.0, 'TaxSavings': 171600.0}
+2025-04-23 14:01:18,513 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 14:01:18,514 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 14:01:18,514 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 14:01:18,514 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 14:01:18,515 - INFO - Making prediction with features: [{'AnnualIncome': 560000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 100000, 'Age': 40, 'EmploymentType': 'Business', 'MaritalStatus': 'Married'}]
+2025-04-23 14:01:18,516 - INFO - Encoding EmploymentType = Business using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 14:01:18,516 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 14:01:18,517 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 14:01:18,558 - INFO - Raw model prediction: Standard_Planning
+2025-04-23 14:01:18,558 - INFO - Class probabilities: [1.77079638e-02 4.02656583e-02 1.27052921e-02 9.10804020e-04
+ 9.28410282e-01]
+2025-04-23 14:01:18,558 - INFO - Model confidence: 0.9284
+2025-04-23 14:01:18,558 - INFO - Recommendations customized based on: Age=40, Income=560000, 80C=100000
+2025-04-23 14:01:18,559 - INFO - Prediction successful: Strategy=Comprehensive Standard Tax Planning
+2025-04-23 14:01:50,099 - INFO - Predicting strategy for input: {'AnnualIncome': 560000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 100000, 'Age': 40, 'EmploymentType': 'Business', 'MaritalStatus': 'Married', 'TaxLiability': 3120.0, 'TaxSavings': 171600.0}
+2025-04-23 14:01:50,266 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 14:01:50,267 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 14:01:50,267 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 14:01:50,267 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 14:01:50,269 - INFO - Making prediction with features: [{'AnnualIncome': 560000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 100000, 'Age': 40, 'EmploymentType': 'Business', 'MaritalStatus': 'Married'}]
+2025-04-23 14:01:50,269 - INFO - Encoding EmploymentType = Business using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 14:01:50,269 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 14:01:50,270 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 14:01:50,315 - INFO - Raw model prediction: Standard_Planning
+2025-04-23 14:01:50,316 - INFO - Class probabilities: [1.77079638e-02 4.02656583e-02 1.27052921e-02 9.10804020e-04
+ 9.28410282e-01]
+2025-04-23 14:01:50,317 - INFO - Model confidence: 0.9284
+2025-04-23 14:01:50,317 - INFO - Recommendations customized based on: Age=40, Income=560000, 80C=100000
+2025-04-23 14:01:50,318 - INFO - Prediction successful: Strategy=Comprehensive Standard Tax Planning
+2025-04-23 14:02:02,849 - INFO - Predicting strategy for input: {'AnnualIncome': 560000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 100000, 'Age': 40, 'EmploymentType': 'Business', 'MaritalStatus': 'Married', 'TaxLiability': 3120.0, 'TaxSavings': 171600.0}
+2025-04-23 14:02:02,918 - INFO - Model loaded successfully from models/tax_strategy_model.pkl
+2025-04-23 14:02:02,918 - INFO - Metadata loaded successfully with keys: ['training_date', 'model_version', 'feature_encodings', 'performance_metrics', 'model_parameters', 'target_classes', 'strategy_mapping']
+2025-04-23 14:02:02,918 - INFO - Target classes: ['80C_Investment', 'Aggressive_Tax_Planning', 'High_Income_Strategy', 'Senior_Planning', 'Standard_Planning']
+2025-04-23 14:02:02,919 - INFO - Strategy mapping: {'80C_Investment': 0, 'Aggressive_Tax_Planning': 1, 'High_Income_Strategy': 2, 'Senior_Planning': 3, 'Standard_Planning': 4}
+2025-04-23 14:02:02,920 - INFO - Making prediction with features: [{'AnnualIncome': 560000, 'Investments': 100000, 'Deductions': 50000, 'HRA': 100000, 'Age': 40, 'EmploymentType': 'Business', 'MaritalStatus': 'Married'}]
+2025-04-23 14:02:02,920 - INFO - Encoding EmploymentType = Business using available classes: ['Business', 'Government', 'Private', 'Retired', 'Self-Employed']
+2025-04-23 14:02:02,921 - INFO - Encoding MaritalStatus = Married using available classes: ['Married', 'Single']
+2025-04-23 14:02:02,921 - INFO - Feature data types: {'AnnualIncome': dtype('int64'), 'Investments': dtype('int64'), 'Deductions': dtype('int64'), 'HRA': dtype('int64'), 'Age': dtype('int64'), 'EmploymentType': dtype('int64'), 'MaritalStatus': dtype('int64')}
+2025-04-23 14:02:02,963 - INFO - Raw model prediction: Standard_Planning
+2025-04-23 14:02:02,964 - INFO - Class probabilities: [1.77079638e-02 4.02656583e-02 1.27052921e-02 9.10804020e-04
+ 9.28410282e-01]
+2025-04-23 14:02:02,964 - INFO - Model confidence: 0.9284
+2025-04-23 14:02:02,964 - INFO - Recommendations customized based on: Age=40, Income=560000, 80C=100000
+2025-04-23 14:02:02,964 - INFO - Prediction successful: Strategy=Comprehensive Standard Tax Planning

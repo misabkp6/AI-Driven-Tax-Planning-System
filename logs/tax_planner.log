@@ -1,0 +1,177 @@
+2025-04-02 23:30:11,558 - INFO - Model and scaler loaded successfully
+2025-04-02 23:30:11,649 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 23:30:11,649 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 23:30:11,667 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:30:14,913 - INFO - Model and scaler loaded successfully
+2025-04-02 23:30:14,947 - WARNING -  * Debugger is active!
+2025-04-02 23:30:14,951 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:30:50,921 - INFO - 127.0.0.1 - - [02/Apr/2025 23:30:50] "GET / HTTP/1.1" 200 -
+2025-04-02 23:30:51,047 - INFO - 127.0.0.1 - - [02/Apr/2025 23:30:51] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-02 23:30:53,195 - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-04-02 23:30:53,199 - INFO - 127.0.0.1 - - [02/Apr/2025 23:30:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-02 23:31:23,788 - INFO - The CSRF token is missing.
+2025-04-02 23:31:23,789 - INFO - 127.0.0.1 - - [02/Apr/2025 23:31:23] "[31m[1mPOST / HTTP/1.1[0m" 400 -
+2025-04-02 23:32:05,054 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py', reloading
+2025-04-02 23:32:05,100 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\config\\__init__.py', reloading
+2025-04-02 23:32:05,812 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:32:09,441 - INFO - Model and scaler loaded successfully
+2025-04-02 23:32:09,483 - WARNING -  * Debugger is active!
+2025-04-02 23:32:09,489 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:54:31,432 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-02 23:54:31,435 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-02 23:54:31,435 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-02 23:54:31,436 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-02 23:54:32,289 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:55:04,621 - INFO - Model and scaler loaded successfully
+2025-04-02 23:55:04,677 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 23:55:04,677 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 23:55:04,692 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-02 23:55:07,915 - INFO - Model and scaler loaded successfully
+2025-04-02 23:55:07,948 - WARNING -  * Debugger is active!
+2025-04-02 23:55:07,952 - INFO -  * Debugger PIN: 209-793-045
+2025-04-02 23:55:20,398 - INFO - 127.0.0.1 - - [02/Apr/2025 23:55:20] "GET / HTTP/1.1" 200 -
+2025-04-02 23:55:20,465 - INFO - 127.0.0.1 - - [02/Apr/2025 23:55:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-02 23:56:24,959 - ERROR - Prediction error: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- Age_Group
+- Deduction_Rate
+- Dependent_Impact
+- Disposable_Income
+- Effective_Tax_Rate
+- ...
+
+2025-04-02 23:56:24,959 - ERROR - Comprehensive analysis error: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- Age_Group
+- Deduction_Rate
+- Dependent_Impact
+- Disposable_Income
+- Effective_Tax_Rate
+- ...
+
+2025-04-02 23:56:24,959 - WARNING - Invalid input: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- Age_Group
+- Deduction_Rate
+- Dependent_Impact
+- Disposable_Income
+- Effective_Tax_Rate
+- ...
+
+2025-04-02 23:56:24,960 - INFO - 127.0.0.1 - - [02/Apr/2025 23:56:24] "POST / HTTP/1.1" 200 -
+2025-04-02 23:56:24,978 - INFO - 127.0.0.1 - - [02/Apr/2025 23:56:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 00:07:03,674 - INFO - Model and scaler loaded successfully
+2025-04-03 00:07:03,731 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 00:07:03,732 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 00:07:03,745 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 00:07:06,340 - INFO - Model and scaler loaded successfully
+2025-04-03 00:07:06,385 - WARNING -  * Debugger is active!
+2025-04-03 00:07:06,391 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 00:07:19,603 - INFO - 127.0.0.1 - - [03/Apr/2025 00:07:19] "GET / HTTP/1.1" 200 -
+2025-04-03 00:07:19,688 - INFO - 127.0.0.1 - - [03/Apr/2025 00:07:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 00:08:09,233 - ERROR - Prediction error: Invalid feature: Income_to_Investment_Ratio
+2025-04-03 00:08:09,234 - ERROR - Comprehensive analysis error: Invalid feature: Income_to_Investment_Ratio
+2025-04-03 00:08:09,234 - WARNING - Invalid input: Invalid feature: Income_to_Investment_Ratio
+2025-04-03 00:08:09,236 - INFO - 127.0.0.1 - - [03/Apr/2025 00:08:09] "POST / HTTP/1.1" 200 -
+2025-04-03 00:08:09,253 - INFO - 127.0.0.1 - - [03/Apr/2025 00:08:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 00:08:27,735 - INFO -  * Detected change in 'C:\\Program Files\\Python313\\Lib\\logging\\__init__.py', reloading
+2025-04-03 00:08:28,351 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 00:08:30,999 - INFO - Model and scaler loaded successfully
+2025-04-03 00:08:31,032 - WARNING -  * Debugger is active!
+2025-04-03 00:08:31,038 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 00:22:55,264 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-03 00:22:55,268 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-03 00:22:55,269 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-03 00:22:56,636 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 00:22:59,194 - INFO - Model and scaler loaded successfully
+2025-04-03 00:22:59,234 - WARNING -  * Debugger is active!
+2025-04-03 00:22:59,240 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 00:23:05,063 - INFO - Model and scaler loaded successfully
+2025-04-03 00:23:05,113 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 00:23:05,113 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 00:23:05,127 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 00:23:07,461 - INFO - Model and scaler loaded successfully
+2025-04-03 00:23:07,493 - WARNING -  * Debugger is active!
+2025-04-03 00:23:07,498 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 00:23:24,332 - ERROR - Prediction error: Invalid feature: investment_to_income_ratio
+2025-04-03 00:23:24,333 - ERROR - Comprehensive analysis error: Invalid feature: investment_to_income_ratio
+2025-04-03 00:23:24,334 - WARNING - Invalid input: Invalid feature: investment_to_income_ratio
+2025-04-03 00:23:24,398 - INFO - 127.0.0.1 - - [03/Apr/2025 00:23:24] "POST / HTTP/1.1" 200 -
+2025-04-03 00:23:24,538 - INFO - 127.0.0.1 - - [03/Apr/2025 00:23:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 00:23:34,463 - INFO - 127.0.0.1 - - [03/Apr/2025 00:23:34] "GET / HTTP/1.1" 200 -
+2025-04-03 00:23:34,485 - INFO - 127.0.0.1 - - [03/Apr/2025 00:23:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 00:24:17,732 - ERROR - Prediction error: Invalid feature: investment_to_income_ratio
+2025-04-03 00:24:17,732 - ERROR - Comprehensive analysis error: Invalid feature: investment_to_income_ratio
+2025-04-03 00:24:17,732 - WARNING - Invalid input: Invalid feature: investment_to_income_ratio
+2025-04-03 00:24:17,733 - INFO - 127.0.0.1 - - [03/Apr/2025 00:24:17] "POST / HTTP/1.1" 200 -
+2025-04-03 00:24:17,753 - INFO - 127.0.0.1 - - [03/Apr/2025 00:24:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 10:37:03,123 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-03 10:37:03,127 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-03 10:37:03,129 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\app.py', reloading
+2025-04-03 10:37:03,601 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 10:37:12,385 - INFO - Model and scaler loaded successfully
+2025-04-03 10:37:12,436 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 10:37:12,436 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 10:37:12,454 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 10:37:14,374 - INFO - Model and scaler loaded successfully
+2025-04-03 10:37:14,447 - WARNING -  * Debugger is active!
+2025-04-03 10:37:14,453 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 10:37:29,018 - INFO - 127.0.0.1 - - [03/Apr/2025 10:37:29] "GET / HTTP/1.1" 200 -
+2025-04-03 10:37:29,078 - INFO - 127.0.0.1 - - [03/Apr/2025 10:37:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 10:38:06,876 - ERROR - Prediction error: Invalid feature: investment_to_income_ratio
+2025-04-03 10:38:06,877 - ERROR - Comprehensive analysis error: Invalid feature: investment_to_income_ratio
+2025-04-03 10:38:06,877 - WARNING - Invalid input: Invalid feature: investment_to_income_ratio
+2025-04-03 10:38:06,878 - INFO - 127.0.0.1 - - [03/Apr/2025 10:38:06] "POST / HTTP/1.1" 200 -
+2025-04-03 10:38:06,900 - INFO - 127.0.0.1 - - [03/Apr/2025 10:38:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 10:45:33,142 - INFO - Model and scaler loaded successfully
+2025-04-03 10:45:33,201 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 10:45:33,201 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 10:45:33,213 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 10:45:35,117 - INFO - Model and scaler loaded successfully
+2025-04-03 10:45:35,144 - WARNING -  * Debugger is active!
+2025-04-03 10:45:35,147 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 10:45:42,902 - INFO - 127.0.0.1 - - [03/Apr/2025 10:45:42] "GET / HTTP/1.1" 200 -
+2025-04-03 10:45:42,972 - INFO - 127.0.0.1 - - [03/Apr/2025 10:45:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 10:46:24,691 - ERROR - Prediction error: Invalid feature: income_investment_ratio
+2025-04-03 10:46:24,691 - ERROR - Comprehensive analysis error: Invalid feature: income_investment_ratio
+2025-04-03 10:46:24,691 - WARNING - Invalid input: Invalid feature: income_investment_ratio
+2025-04-03 10:46:24,692 - INFO - 127.0.0.1 - - [03/Apr/2025 10:46:24] "POST / HTTP/1.1" 200 -
+2025-04-03 10:46:24,710 - INFO - 127.0.0.1 - - [03/Apr/2025 10:46:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-03 10:48:58,709 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\interface.py', reloading
+2025-04-03 10:48:59,733 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 10:49:02,430 - INFO - Model and scaler loaded successfully
+2025-04-03 10:49:02,461 - WARNING -  * Debugger is active!
+2025-04-03 10:49:02,465 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 10:49:04,098 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\train_model.py', reloading
+2025-04-03 10:49:05,006 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 10:49:07,207 - INFO - Model and scaler loaded successfully
+2025-04-03 10:49:07,237 - WARNING -  * Debugger is active!
+2025-04-03 10:49:07,241 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 10:49:09,804 - INFO -  * Detected change in 'C:\\Users\\mmkp1\\Desktop\\Tax_Planning_Project\\preprocess.py', reloading
+2025-04-03 10:49:10,866 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 10:49:12,995 - INFO - Model and scaler loaded successfully
+2025-04-03 10:49:13,021 - WARNING -  * Debugger is active!
+2025-04-03 10:49:13,025 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 11:14:26,877 - INFO - Model and scaler loaded successfully
+2025-04-03 11:14:26,915 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 11:14:26,916 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 11:14:26,936 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-03 11:14:28,643 - INFO - Model and scaler loaded successfully
+2025-04-03 11:14:28,670 - WARNING -  * Debugger is active!
+2025-04-03 11:14:28,674 - INFO -  * Debugger PIN: 209-793-045
+2025-04-03 11:14:39,908 - INFO - 127.0.0.1 - - [03/Apr/2025 11:14:39] "GET / HTTP/1.1" 200 -
+2025-04-03 11:14:39,925 - INFO - 127.0.0.1 - - [03/Apr/2025 11:14:39] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-04-03 11:14:39,926 - INFO - 127.0.0.1 - - [03/Apr/2025 11:14:39] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
+2025-04-03 11:15:04,819 - INFO - 127.0.0.1 - - [03/Apr/2025 11:15:04] "GET / HTTP/1.1" 200 -
+2025-04-03 11:15:04,845 - INFO - 127.0.0.1 - - [03/Apr/2025 11:15:04] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-04-03 11:15:04,845 - INFO - 127.0.0.1 - - [03/Apr/2025 11:15:04] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
+2025-04-03 11:16:29,534 - INFO - 127.0.0.1 - - [03/Apr/2025 11:16:29] "GET / HTTP/1.1" 200 -
+2025-04-03 11:16:29,552 - INFO - 127.0.0.1 - - [03/Apr/2025 11:16:29] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-04-03 11:16:29,555 - INFO - 127.0.0.1 - - [03/Apr/2025 11:16:29] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -

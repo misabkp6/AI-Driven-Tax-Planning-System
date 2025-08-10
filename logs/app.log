@@ -1,0 +1,184 @@
+2025-04-05 10:17:58,408 - ERROR - Prediction error: only length-1 arrays can be converted to Python scalars
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\app.py", line 169, in <module>
+    tax_amount = float(prediction[0])
+TypeError: only length-1 arrays can be converted to Python scalars
+2025-04-05 22:29:21,548 - ERROR - Error during processing
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\app.py", line 131, in <module>
+    strategy = model.predict(input_array)[0]
+               ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\ensemble\_forest.py", line 904, in predict
+    proba = self.predict_proba(X)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\ensemble\_forest.py", line 946, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\ensemble\_forest.py", line 638, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\validation.py", line 2965, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\validation.py", line 2829, in _check_n_features
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: X has 3 features, but RandomForestClassifier is expecting 9 features as input.
+2025-04-06 11:38:09,281 - ERROR - [Errno 2] No such file or directory: 'models/tax_models.pkl'
+2025-04-06 11:39:12,893 - ERROR - columns are missing: {'NumDependents', 'Age', 'MaritalStatus', 'OtherIncome', 'Deductions', 'EmploymentType', 'Investments', 'HRA', 'AnnualIncome', 'BusinessExpenses'}
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\app.py", line 65, in <module>
+    predicted_tax = float(tax_model.predict(input_df)[0])
+                          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 787, in predict
+    Xt = transform.transform(Xt)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\compose\_column_transformer.py", line 1090, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'NumDependents', 'Age', 'MaritalStatus', 'OtherIncome', 'Deductions', 'EmploymentType', 'Investments', 'HRA', 'AnnualIncome', 'BusinessExpenses'}
+2025-04-06 12:01:07,263 - INFO - Models loaded successfully
+2025-04-06 12:01:15,089 - INFO - Models loaded successfully
+2025-04-06 12:01:15,110 - ERROR - Analysis error: columns are missing: {'BusinessExpenses'}
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\app.py", line 82, in <module>
+    ml_tax_prediction = float(tax_model.predict(input_data)[0])
+                              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\pipeline.py", line 787, in predict
+    Xt = transform.transform(Xt)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\mmkp1\AppData\Roaming\Python\Python313\site-packages\sklearn\compose\_column_transformer.py", line 1090, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BusinessExpenses'}
+2025-04-06 12:01:21,463 - INFO - Models loaded successfully
+2025-04-06 12:10:05,677 - INFO - Models and metadata loaded successfully
+2025-04-06 12:13:48,276 - INFO - Models and metadata loaded successfully
+2025-04-06 12:14:03,682 - INFO - Models and metadata loaded successfully
+2025-04-06 12:14:03,790 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 12:15:07,811 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:07,936 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:08,071 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:08,298 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:21,157 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:33,873 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:41,886 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:43,266 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:43,828 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:49,698 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:52,607 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:54,288 - INFO - Models and metadata loaded successfully
+2025-04-06 12:15:54,328 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 14:17:12,598 - INFO - Models and metadata loaded successfully
+2025-04-06 14:17:15,135 - INFO - Models and metadata loaded successfully
+2025-04-06 14:17:15,180 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 14:39:24,173 - INFO - Models and metadata loaded successfully
+2025-04-06 14:39:26,520 - INFO - Models and metadata loaded successfully
+2025-04-06 14:39:26,567 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 14:40:25,535 - INFO - Models and metadata loaded successfully
+2025-04-06 14:40:25,740 - INFO - Models and metadata loaded successfully
+2025-04-06 14:40:25,769 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 14:42:46,001 - INFO - Models and metadata loaded successfully
+2025-04-06 14:42:48,059 - INFO - Models and metadata loaded successfully
+2025-04-06 14:42:48,091 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 14:43:03,128 - INFO - Models and metadata loaded successfully
+2025-04-06 14:43:03,346 - INFO - Models and metadata loaded successfully
+2025-04-06 14:43:03,376 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 14:43:18,788 - INFO - Models and metadata loaded successfully
+2025-04-06 14:43:24,376 - INFO - Models and metadata loaded successfully
+2025-04-06 14:43:30,402 - INFO - Models and metadata loaded successfully
+2025-04-06 14:43:32,251 - INFO - Models and metadata loaded successfully
+2025-04-06 14:43:35,215 - INFO - Models and metadata loaded successfully
+2025-04-06 14:43:37,285 - INFO - Models and metadata loaded successfully
+2025-04-06 14:43:37,314 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 17:27:32,209 - INFO - Models and metadata loaded successfully
+2025-04-06 17:27:36,006 - INFO - Models and metadata loaded successfully
+2025-04-06 17:27:36,110 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 19:29:54,088 - INFO - Model loaded successfully
+2025-04-06 19:30:45,569 - INFO - Model loaded successfully
+2025-04-06 19:30:45,652 - ERROR - Prediction error: only length-1 arrays can be converted to Python scalars
+2025-04-06 19:30:45,653 - ERROR - ML prediction failed: only length-1 arrays can be converted to Python scalars
+2025-04-06 19:45:18,673 - INFO - Model loaded successfully
+2025-04-06 19:45:22,077 - INFO - Model loaded successfully
+2025-04-06 20:03:53,026 - INFO - Models loaded successfully
+2025-04-06 20:03:57,866 - INFO - Models loaded successfully
+2025-04-06 20:03:57,901 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-06 20:03:57,922 - ERROR - Strategy model error: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- BusinessExpenses
+- NumDependents
+- OtherIncome
+- age_group
+- deduction_ratio
+- ...
+
+2025-04-06 20:25:11,229 - INFO - Models loaded successfully
+2025-04-06 20:25:16,188 - INFO - Models loaded successfully
+2025-04-06 20:25:16,223 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-06 20:25:16,231 - ERROR - Strategy model error: 'strategy_feature_names'
+2025-04-06 20:32:24,207 - INFO - Models loaded successfully
+2025-04-06 20:32:27,861 - INFO - Models loaded successfully
+2025-04-06 20:32:27,899 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-06 20:36:29,371 - INFO - Models loaded successfully
+2025-04-06 20:36:33,678 - INFO - Models loaded successfully
+2025-04-06 20:36:33,716 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-06 20:36:33,724 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"
+2025-04-06 23:36:45,005 - INFO - Models loaded successfully
+2025-04-06 23:38:24,820 - INFO - Models loaded successfully
+2025-04-06 23:38:24,909 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-06 23:38:24,918 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"
+2025-04-07 11:22:58,178 - INFO - Models loaded successfully
+2025-04-07 11:23:03,047 - INFO - Models loaded successfully
+2025-04-07 11:23:03,112 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-07 11:23:03,123 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"
+2025-04-07 11:23:41,551 - INFO - Models loaded successfully
+2025-04-07 11:23:41,584 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-07 11:23:41,593 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"
+2025-04-07 11:24:20,985 - INFO - Model loaded successfully
+2025-04-07 11:24:24,547 - INFO - Model loaded successfully
+2025-04-07 11:46:15,441 - INFO - Model loaded successfully
+2025-04-07 11:46:21,346 - INFO - Model loaded successfully
+2025-04-07 11:48:09,246 - INFO - Model loaded successfully
+2025-04-07 11:48:22,995 - INFO - Model loaded successfully
+2025-04-07 11:48:28,963 - INFO - Model loaded successfully
+2025-04-07 12:06:54,519 - INFO - Model loaded successfully
+2025-04-07 12:07:06,581 - INFO - Model loaded successfully
+2025-04-07 12:07:12,122 - INFO - Model loaded successfully
+2025-04-07 12:07:22,387 - INFO - Model loaded successfully
+2025-04-07 12:07:24,036 - INFO - Model loaded successfully
+2025-04-07 12:07:27,006 - INFO - Model loaded successfully
+2025-04-07 12:07:30,661 - INFO - Model loaded successfully
+2025-04-07 12:07:32,129 - INFO - Model loaded successfully
+2025-04-07 12:07:58,766 - INFO - Model loaded successfully
+2025-04-07 12:08:04,043 - INFO - Model loaded successfully
+2025-04-07 12:08:04,236 - INFO - Model loaded successfully
+2025-04-07 12:41:41,296 - INFO - Models loaded successfully
+2025-04-07 12:41:44,930 - INFO - Models loaded successfully
+2025-04-07 12:41:44,955 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-07 12:41:44,962 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"
+2025-04-07 12:42:07,494 - INFO - Models loaded successfully
+2025-04-07 12:42:59,380 - INFO - Models loaded successfully
+2025-04-07 12:42:59,413 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-07 12:42:59,431 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"
+2025-04-07 12:45:19,040 - INFO - Models loaded successfully
+2025-04-07 12:45:19,348 - INFO - Models loaded successfully
+2025-04-07 12:45:20,793 - INFO - Models loaded successfully
+2025-04-07 12:45:20,827 - INFO - ML Tax Prediction: ₹159,584.11
+2025-04-07 12:45:20,836 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"
+2025-04-07 13:19:40,255 - INFO - Models loaded successfully
+2025-04-07 13:22:43,424 - INFO - Models loaded successfully
+2025-04-07 13:24:49,130 - INFO - Models loaded successfully
+2025-04-07 13:24:49,167 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-07 13:24:49,175 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"
+2025-04-07 13:25:22,140 - INFO - Model loaded successfully
+2025-04-07 13:37:44,721 - INFO - Model loaded successfully
+2025-04-07 13:38:02,533 - INFO - Model loaded successfully
+2025-04-07 13:43:34,740 - INFO - Model loaded successfully
+2025-04-12 13:56:02,178 - INFO - Model loaded successfully
+2025-04-12 13:56:11,544 - INFO - Model loaded successfully
+2025-04-12 13:56:53,666 - INFO - Models loaded successfully
+2025-04-12 13:56:58,235 - INFO - Models loaded successfully
+2025-04-12 13:56:58,270 - INFO - ML Tax Prediction: ₹161,939.58
+2025-04-12 13:56:58,278 - ERROR - Strategy model error: "Missing feature list for strategy model: 'feature_names'"

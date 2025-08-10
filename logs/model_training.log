@@ -1,0 +1,37 @@
+2025-04-03 13:05:45,862 - INFO - Starting model training process...
+2025-04-03 13:05:46,225 - INFO - Data loaded: 200000 samples, 25 features
+2025-04-03 13:08:04,655 - INFO - Best parameters found: {'subsample': 0.9, 'n_estimators': 300, 'min_child_weight': 5, 'max_depth': 4, 'learning_rate': 0.05, 'gamma': 0, 'colsample_bytree': 0.9}
+2025-04-03 13:08:07,024 - ERROR - Training failed: Must have at least 1 validation dataset for early stopping.
+2025-04-03 14:31:08,244 - INFO - Starting model training process...
+2025-04-03 14:31:08,719 - INFO - Data loaded: 200000 samples, 25 features
+2025-04-03 14:33:38,045 - INFO - Best parameters found: {'subsample': 0.8, 'n_estimators': 300, 'min_child_weight': 1, 'max_depth': 3, 'learning_rate': 0.05, 'gamma': 0, 'colsample_bytree': 0.9}
+2025-04-04 11:14:18,226 - ERROR - [improved_train_model.py:443] - Training failed: 'TaxFeatureEngineer' object has no attribute 'create_synthetic_targets'
+2025-04-04 11:17:53,214 - ERROR - [improved_train_model.py:496] - Training failed: 'TaxFeatureEngineer' object has no attribute 'engineer_features'
+2025-04-04 12:35:21,564 - ERROR - Training failed: name 'TaxModelTrainer' is not defined
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 88, in main
+    trainer = TaxModelTrainer()
+              ^^^^^^^^^^^^^^^
+NameError: name 'TaxModelTrainer' is not defined
+2025-04-04 12:38:40,685 - ERROR - Training failed: 'float' object has no attribute 'clip'
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 227, in main
+    X, y = trainer.load_data(file_path)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 87, in load_data
+    df = self.feature_engineer.engineer_features(df)
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 68, in engineer_features
+    ).clip(0, 1)
+      ^^^^
+AttributeError: 'float' object has no attribute 'clip'
+2025-04-04 19:44:37,809 - ERROR - Training failed: 'float' object has no attribute 'clip'
+Traceback (most recent call last):
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 314, in main
+    X, y = trainer.load_data(file_path)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 150, in load_data
+    df = self.feature_engineer.engineer_features(df)
+  File "C:\Users\mmkp1\Desktop\Tax_Planning_Project\improved_train_model.py", line 68, in engineer_features
+    ).clip(0, 1)
+      ^^^^
+AttributeError: 'float' object has no attribute 'clip'
